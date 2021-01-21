@@ -1,0 +1,64 @@
+// ALL_COLOR 
+$white: #fff;
+$black: #000;
+$hotPink:  #FF699F;
+
+$main-bg: #fff;
+$main-color: #000;
+$background-hover: #060606;
+
+$button--main: $black;
+$button--secondary: $hotPink;
+$burger-color: $black;
+$mobile-menu-border: $hotPink;
+// OTHER VARS
+$header-height: 72px;
+
+
+
+// FONT
+$main-font: 'Montserrat', sans-serif;
+// + or - size * on number [.5, .75, 1.25, 1.5] for rem
+$main-fz: 16px;
+
+// CONTAINER
+$main-width: 1330px;
+
+// H1-H6
+h1,
+h2, 
+h3 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 72px;
+  line-height: 68px;
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 34px;
+}
+h3 {
+  font-size: 24px;
+  line-height: 25px;
+}
+// h4 {
+//   font-size: 22px;
+//   line-height: 22px;
+// }
+// h5 {
+//   font-size: 18px;
+//   line-height: 18px;
+// }
+// h6 {
+//   font-size: 16px;
+//   line-height: 16px;
+// }
+
+// SPRITE
+$pathS: '../images/icons/sprite.png';
+
+// TRANSITION_TIMES
+$fast: .3s;

@@ -1,0 +1,21 @@
+.mobile-menu {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 9;
+  border-bottom: 4px solid $mobile-menu-border;
+  padding-top: 40px;
+  height: 100vh;
+  background-color: $white;
+
+  &__menu {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 34px;
+    text-transform: capitalize;
+  }
+
+  
+}

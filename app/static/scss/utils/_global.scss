@@ -1,0 +1,98 @@
+html {
+  box-sizing: border-box;
+  font-size: $main-fz;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $main-font;
+  color: $main-color;
+  background-color: $main-bg;
+  line-height: 25px;
+}
+
+// start reset CSS
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+input,
+button,
+textarea,
+select {
+  border: none;
+}
+
+button {
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+textarea {
+  resize: none;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.images-wrapper {
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+// end reset CSS
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  min-height: 100%;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex: 0 0 auto;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: $main-width;
+}

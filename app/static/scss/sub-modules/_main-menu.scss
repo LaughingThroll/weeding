@@ -1,0 +1,46 @@
+.main-menu {
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    &:hover {
+      .main-menu__hover::before {
+        width: 100%;
+      }
+    }
+  }
+
+  .main-menu__item + .main-menu__item {
+    margin-left: 24px;
+
+    @include max-width(800px) {
+      margin-left: 15px;
+    }
+  }
+
+  &__link {
+    position: relative;
+    font-family: "Roboto" sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.41px;
+    color: $black;
+  }
+
+  &__hover {
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: 0 auto;
+      width: 0;
+      height: 1px;
+      background-color: $background-hover;
+      transition: width $fast linear;
+    }
+  }
+}

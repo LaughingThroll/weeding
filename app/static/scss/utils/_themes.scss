@@ -1,0 +1,10 @@
+@mixin themes($themes-name, $themes-bg, $themes-color) {
+  .#{$themes-name} {
+    .wrapper {
+      background-color: $themes-bg;
+      color: $themes-color;
+    }
+  }
+}
+
+@include themes(dark-theme, #000, #fff);

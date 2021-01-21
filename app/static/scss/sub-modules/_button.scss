@@ -1,0 +1,18 @@
+.button {
+  border: 2px solid transparent;
+  border-radius: 3px;
+  font-weight: 600;
+  line-height: 24.54px;
+
+  &--main {
+    border-color: $button--main;
+    padding: 5px 35px;
+    color: $button--main;
+  }
+
+  &--secondary {
+    border-color: $button--secondary;
+    padding: 7px 30px;
+    color: $button--secondary;
+  }
+}

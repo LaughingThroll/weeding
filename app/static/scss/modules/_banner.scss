@@ -1,0 +1,33 @@
+.banner {
+  padding-top: $header-height;
+
+  &__container {
+    display: flex;
+  }
+
+  &__content {
+    padding: 73px 77px 80px 0;
+    width: 100%;
+    max-width: 532px;
+  }
+
+  &__title {
+    margin-bottom: 16px;
+  }
+
+  &__subtitle {
+    margin-bottom: 40px;
+  }
+
+  &__paragraph {
+    margin-bottom: 40px;
+  }
+
+  &__images {
+    width: 100%;
+
+    img {
+      object-fit: cover;
+    }
+  }
+}
