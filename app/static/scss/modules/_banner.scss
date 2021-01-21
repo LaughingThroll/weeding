@@ -1,26 +1,62 @@
 .banner {
   padding-top: $header-height;
 
+  @include max-width(768px) {
+    $header-height: 57px;
+
+    padding-top: $header-height;
+  }
+
   &__container {
     display: flex;
+
+    @include max-width(1024px) {
+      flex-direction: column-reverse;
+    }
   }
 
   &__content {
     padding: 73px 77px 80px 0;
     width: 100%;
     max-width: 532px;
+
+    @include max-width(1024px) {
+      padding: 50px 59px 60px 0;
+    }
+
+    @include max-width(500px) {
+      padding: 32px 59px 0 0;
+    }
   }
 
   &__title {
     margin-bottom: 16px;
+
+    @include max-width(500px) {
+      margin-bottom: 11px;
+      font-size: 36px;
+      line-height: 34px;
+    }
   }
 
   &__subtitle {
     margin-bottom: 40px;
+
+    @include max-width(500px) {
+      margin-bottom: 18px;
+      font-size: 14px;
+      line-height: 17px;
+    }
   }
 
   &__paragraph {
     margin-bottom: 40px;
+
+    @include max-width(500px) {
+      margin-bottom: 35px;
+      font-size: 14px;
+      line-height: 21px;
+    }
   }
 
   &__images {
@@ -28,6 +64,16 @@
 
     img {
       object-fit: cover;
+    }
+
+    @include max-width(1024px) {
+      width: calc(100% + #{$container-padding} * 2);
+      height: 500px;
+      transform: translateX(-$container-padding);
+    }
+
+    @include max-width(500px) {
+      height: 275px;
     }
   }
 }

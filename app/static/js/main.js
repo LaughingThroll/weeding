@@ -1,25 +1,46 @@
 import './utils/modernizr'
-import { createMobileMenu, destroyMobileMenu } from './modules/mobileMenu'
+import insertChildrens from './utils/insertChildrens'
+import toggler from './utils/toggler'
 
-window.addEventListener('DOMContentLoaded', function() {
+window.addEventListener('DOMContentLoaded', function () {
+
+  // const $content = document.querySelector('.content')
+  const $mobileMenu = document.querySelector('.mobile-menu')
+  const $header = document.querySelector('.header')
+  const $headerContainer = $header.querySelector('.header__container')
+  const $mainMenu = $header.querySelector('.main-menu')
+  const $headerBtn = $header.querySelector('.header__button')
+  const $burgerBtn = $header.querySelector('.burger-btn')
+
   
-  const $content = document.querySelector('.content')
-  const $headerContainer = document.querySelector('.header__container')
-  const $mainMenu = document.querySelector('.main-menu')
-  const $headerBtn = document.querySelector('.header__button')
-
-  function adaptiveMobileMenu( parentTo /* HTMLElement */, parentFrom /* HTMLElement */, ...children /* HTMLElement */) {
-    if (window.innerWidth <= 768) createMobileMenu(parentTo, ...children) 
-    if (window.innerWidth > 768) destroyMobileMenu(parentFrom, ...children)
+  const childrenForAppendArray = [$mainMenu, $headerBtn]
+  const toggleClass = {
+    'header--active': $header,
+    'burger-btn--active': $burgerBtn,
+    'mobile-menu--active': $mobileMenu
   }
 
-  adaptiveMobileMenu($content, $headerContainer, $mainMenu, $headerBtn)
-  window.addEventListener('resize', adaptiveMobileMenu.bind(this, $content, $headerContainer, $mainMenu, $headerBtn))
+
+  function adaptiveHeader() {
+    if (window.innerWidth <= 768) {
+      
+      if (Array.from($mobileMenu.children).includes($mainMenu)) return
+      childrenForAppendArray[1].classList.add('mobile-menu__button')
+      insertChildrens($mobileMenu, childrenForAppendArray)
+    
+    } else if (window.innerWidth > 768) {
+
+      if (!Array.from($mobileMenu.children).includes($mainMenu)) return
+      childrenForAppendArray[1].classList.remove('mobile-menu__button')
+      insertChildrens($headerContainer, childrenForAppendArray)
+    
+    }
+  }
+
+
+  adaptiveHeader()
+  window.addEventListener('resize', adaptiveHeader)
+  $burgerBtn.addEventListener('click', toggler(toggleClass))
+
 
 })
-
-
-
-
-
-

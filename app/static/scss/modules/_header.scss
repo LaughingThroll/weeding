@@ -4,14 +4,17 @@
   right: 0;
   top: 0;
   bottom: 0;
+  z-index: 33;
   padding: 19px 0 17px;
   width: 100%;
   height: $header-height;
   background-color: $white;
 
-  // @include max-width(768px) {
-    // height: 57px;
-  // }
+  @include max-width(768px) {
+    $header-height: 57px;
+
+    height: $header-height;
+  }
 
   &__container {
     display: flex;
@@ -28,6 +31,10 @@
     @include max-width(800px) {
       margin-left: 15px;
     }
+
+    @include max-width(768px) {
+      margin-left: 0;
+    }
   }
 
   &__burger-btn {
@@ -39,25 +46,11 @@
   }
 
   &--active {
-    z-index: 33;
     height: 20px;
     background-color: transparent;
-
-    //   .header__container {
-    //     flex-direction: column-reverse;
-    //     align-items: flex-start;
-    //   }
 
     .header__logo {
       display: none;
     }
-
-    //   .header__main-menu {
-    //     margin-left: 0;
-    //   }
-
-    //   .header__button {
-    //     order: -1;
-    //   }
   }
 }

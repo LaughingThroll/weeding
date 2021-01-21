@@ -93,6 +93,6 @@ a {
 
 .container {
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 $container-padding;
   max-width: $main-width;
 }

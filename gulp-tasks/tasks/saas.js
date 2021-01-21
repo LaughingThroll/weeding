@@ -13,7 +13,7 @@
         noWebpClass: '.no-webp'
       }))
       
-      .pipe(G.mergeMediaQuery())
+      
 
       .pipe(G.cleanCSS({
         format: G.isDevelopment ? 'beautify' : { breakWith: '' },
@@ -23,6 +23,8 @@
 
       .pipe(G.autoprefixer({ overrideBrowserslist: ['last 2 versions'] }))
 
+      .pipe(G.mergeMediaQuery())
+      
       .pipe(G.rename({ suffix: '.min' }))
       
       .pipe(G.if(G.isDevelopment, G.sourcemaps.write('./')))
