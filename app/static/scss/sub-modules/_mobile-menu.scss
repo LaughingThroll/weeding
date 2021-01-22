@@ -16,10 +16,6 @@ $padding-top: 40px;
   transform: translateY(-100%);
   transition: transform $fast ease;
 
-  @include max-width(768px) {
-    display: block;
-  }
-
   &__title {
     margin-bottom: 48px;
     font-family: $main-font;
@@ -44,9 +40,11 @@ $padding-top: 40px;
     margin-top: 48px;
   }
 
-  &--active {
-    transform: translateY(0);
-  }
+  // &--active {
+  //   transform: translateY(0);
+  // }
 
-  
+  @include max-width(768px) {
+    display: block;
+  }
 }

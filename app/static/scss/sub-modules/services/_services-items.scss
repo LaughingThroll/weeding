@@ -1,0 +1,13 @@
+.services-items {
+  display: flex;
+
+  &__item {
+    flex: 0 1 33.33333%;
+    min-width: 285px;
+  }
+
+  .services-items__item + .services-items__item {
+    flex: 0 1 calc(33.33333% - 16px);
+    margin-left: 16px;
+  }
+}

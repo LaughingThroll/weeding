@@ -1,0 +1,7 @@
+.main-section {
+  padding-top: 100px;
+
+  @include max-width(1024px) {
+    padding-top: 80px;
+  }
+}

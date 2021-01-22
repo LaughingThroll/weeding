@@ -1,0 +1,8 @@
+.services-list {
+  .services-list__item + .services-list__item {
+    margin-top: 8px;
+  } 
+  &__link {
+    color: $black;
+  }
+}

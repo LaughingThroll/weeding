@@ -1,0 +1,31 @@
+.services-item {
+  border: 1px solid $services-item-border;
+  border-radius: 2px;
+  box-shadow: 0 4px 30px $services-item-shadow;
+
+  &__images {
+    img {
+      // height: 421px;
+      height: 28vw;
+      min-height: 285px;
+      object-fit: cover;
+    }
+  }
+
+  &__content {
+    padding: 40px 20px 54px 24px;
+
+    @include max-width(1024px) {
+      padding: 24px 0 54px 16px;
+
+    }
+  }
+
+  &__title {
+    margin-bottom: 24px;
+
+    @include max-width(1024px) {
+      font-size: 22px;
+    }
+  }
+}

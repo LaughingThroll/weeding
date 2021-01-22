@@ -46,11 +46,8 @@
   }
 
   &--active {
-    height: 20px;
-    background-color: transparent;
-
-    .header__logo {
-      display: none;
+    .mobile-menu {
+      transform: translateY(0);
     }
   }
 }

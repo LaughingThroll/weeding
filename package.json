@@ -61,6 +61,7 @@
   "dependencies": {
     "@babel/runtime": "^7.11.2",
     "normalize.css": "^8.0.1",
+    "object-fit-polyfill": "^0.1.0",
     "picturefill": "^3.0.3"
   }
 }

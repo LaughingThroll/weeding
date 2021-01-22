@@ -21,7 +21,8 @@
     max-width: 532px;
 
     @include max-width(1024px) {
-      padding: 50px 59px 60px 0;
+      padding: 50px 59px 0 0;
+      max-width: 100%;
     }
 
     @include max-width(500px) {
