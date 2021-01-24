@@ -1,0 +1,35 @@
+.offer-item {
+  position: relative;
+  padding-top: 90px;
+  text-align: center;
+
+  &::before {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    font-size: 70px;
+    line-height: 70px;
+    color: $offer-icon;
+    transform: translate(-50%, 0);
+
+    @include max-width(620px) {
+      font-size: 42px;
+      line-height: 42px;
+    }
+  }
+
+  &__paragraph {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 182px;
+
+    @include max-width(620px) {
+      font-size: 13px;
+      line-height: 20px;
+    }
+  }
+
+  @include max-width(620px) {
+    padding-top: 60px;
+  }
+}

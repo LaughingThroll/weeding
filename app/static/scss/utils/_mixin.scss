@@ -50,6 +50,12 @@
   }
 }
 
+@mixin max-height($height) {
+  @media only screen and (max-height: $height) {
+    @content;
+  }
+}
+
 @mixin min-width($width) {
   @media only screen and (min-width: $width) {
     @content;

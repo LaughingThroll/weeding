@@ -10,6 +10,7 @@
 @import 'modules/header';
 @import 'modules/banner';
 @import 'modules/services';
+@import 'modules/offer';
 @import 'modules/footer';
 
 @import 'sub-modules/logo';
@@ -24,6 +25,7 @@
 @import 'sub-modules/services/services-items';
 @import 'sub-modules/services/services-list';
 @import 'sub-modules/pagination';
-
+@import 'sub-modules/offer/offer-items';
+@import 'sub-modules/offer/offer-item';
 
 @import 'utils/media';

@@ -1,13 +1,14 @@
 // ALL_COLOR 
 $white: #fff;
 $black: #000;
+$god-gray: #060606;
 $hotPink:  #FF699F;
 $wispPink: #FEF2F6;
 
-$main-bg: #fff;
-$main-color: #000;
-$background-hover: #060606;
+$main-bg: $white;
+$main-color: $black;
 
+$menu-hover: $god-gray;
 $button--main: $black;
 $button--secondary: $hotPink;
 $burger-color: $black;
@@ -17,6 +18,8 @@ $services-item-shadow: rgba(207, 207, 207, 0.25);
 $services-item-border: rgba(0, 0, 0, 0.04);
 $pagination-bullet: rgba(0, 0, 0, 0.1);
 $pagination-bullet--active: $hotPink;
+$offer-icon: $hotPink;
+
 // OTHER VARS
 $header-height: 72px;
 $container-padding: 15px;

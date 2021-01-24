@@ -26,12 +26,12 @@ $padding-top: 40px;
   }
 
   &__background {
-    // font-size: 250px; || font-size: 33vh;
+    // font-size: 250px; on the psd maket || font-size: 33vh;
     position: absolute;
     right: 0;
     top: -$padding-top;
     font-weight: 900;
-    font-size: 250px;
+    font-size: 230px;
     line-height: 90px;
     writing-mode: vertical-rl;
     color: $mobile-menu-back;

@@ -10,8 +10,8 @@
 
 .icon:before {
 	font-family: "icon";
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: normal;
@@ -21,6 +21,34 @@
 }
 
 
-.icon-ico08:before {
+.icon-coffee:before {
 	content: "\E001";
+}
+
+.icon-door:before {
+	content: "\E002";
+}
+
+.icon-images:before {
+	content: "\E003";
+}
+
+.icon-star:before {
+	content: "\E004";
+}
+
+.icon-two-boys:before {
+	content: "\E005";
+}
+
+.icon-two-smiles:before {
+	content: "\E006";
+}
+
+.icon-users:before {
+	content: "\E007";
+}
+
+.icon-waist:before {
+	content: "\E008";
 }
