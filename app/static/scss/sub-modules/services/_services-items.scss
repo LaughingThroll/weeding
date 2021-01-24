@@ -1,13 +1,37 @@
 .services-items {
-  display: flex;
+  .services-items__item + .services-items__item {
+    $margin: 16px;
+
+    flex: 0 1 calc(33.3333% - #{$margin});
+    margin-left: $margin;
+
+    @include max-width(920px) {
+      margin-left: 0;
+    }
+  }
 
   &__item {
-    flex: 0 1 33.33333%;
+    flex: 0 1 33.3333%;
     min-width: 285px;
   }
 
-  .services-items__item + .services-items__item {
-    flex: 0 1 calc(33.33333% - 16px);
-    margin-left: 16px;
+  .services-items__pagination {
+    display: none;
+    margin-top: 12px;
+
+    @include max-width(920px) {
+      display: flex;
+    }
+  }
+
+  &--disable-flex {
+    .services-items__item {
+      flex: none;
+    }
+
+    .services-items__item + .services-items__item {
+      flex: none;
+      margin-left: 0;
+    }
   }
 }

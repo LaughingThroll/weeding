@@ -4,4 +4,8 @@
   @include max-width(1024px) {
     padding-top: 80px;
   }
+
+  @include max-width(768px) {
+    padding-top: 56px;
+  }
 }

@@ -1,0 +1,25 @@
+.headline {
+  margin-bottom: 48px;
+
+  &__title {
+    margin-bottom: 24px;
+
+    @include max-width(768px) {
+      margin-bottom: 12px;
+    }
+  }
+
+  &__paragraph {
+    margin-bottom: 48px;
+    width: 100%;
+    max-width: 670px;
+
+    @include max-width(768px) {
+      margin-bottom: 32px;
+    }
+  }
+
+  @include max-width(920px) {
+    margin-bottom: 32px;
+  }
+}

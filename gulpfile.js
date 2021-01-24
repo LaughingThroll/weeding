@@ -62,6 +62,7 @@ G.gulp.task('default', G.gulp.series(
   'sass',
   'html',
   G.gulp.parallel(
+    'export',
     'sass',
     'html',
     'browser-sync',

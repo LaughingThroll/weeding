@@ -10,7 +10,7 @@ $padding-top: 40px;
   display: none;
   overflow-x: hidden;
   border-bottom: 4px solid $mobile-menu-border;
-  padding: $padding-top 0 0 24px;
+  padding: $padding-top 24px 0;
   height: 100%;
   background-color: $white;
   transform: translateY(-100%);
@@ -26,6 +26,7 @@ $padding-top: 40px;
   }
 
   &__background {
+    // font-size: 250px; || font-size: 33vh;
     position: absolute;
     right: 0;
     top: -$padding-top;

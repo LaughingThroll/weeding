@@ -1,7 +1,8 @@
 .burger-btn {
   position: relative;
   z-index: 12;
-  width: 32px;
+  padding: 7px;
+  width: 39px;
   transition: width $fast ease-out;
 
   &__line {
@@ -18,8 +19,8 @@
   }
 
   &--active {
-    width: 24px;
-    height: 24px;
+    width: 31px;
+    height: 31px;
 
     .burger-btn__line {
       &:nth-child(1) {

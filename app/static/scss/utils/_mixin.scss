@@ -1,55 +1,58 @@
 @mixin icomoon($path, $id) {
   @font-face {
-    font-family: 'icomoon';
-    src:  url('#{$path}/icomoon.eot?#{$id}');
-    src:  url('#{$path}/icomoon.eot?#{$id}#iefix') format('embedded-opentype'),
-      url('#{$path}/icomoon.ttf?#{$id}') format('truetype'),
-      url('#{$path}/icomoon.woff?#{$id}') format('woff'),
-      url('#{$path}/icomoon.svg?#{$id}#icomoon') format('svg');
+    font-family: "icomoon";
+    src: url("#{$path}/icomoon.eot?#{$id}");
+    src: url("#{$path}/icomoon.eot?#{$id}#iefix") format("embedded-opentype"),
+      url("#{$path}/icomoon.ttf?#{$id}") format("truetype"),
+      url("#{$path}/icomoon.woff?#{$id}") format("woff"),
+      url("#{$path}/icomoon.svg?#{$id}#icomoon") format("svg");
     font-weight: normal;
     font-style: normal;
     font-display: block;
   }
-  
-  [class^="icon-"], [class*=" icon-"] {
+
+  [class^="icon-"],
+  [class*=" icon-"] {
     /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'icomoon' !important;
+    font-family: "icomoon" !important;
     speak-as: none;
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
     text-transform: none;
     line-height: 1;
-  
+
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  }  
+  }
 }
 
-@mixin font-face($path, $name, $style: normal, $weight: normal) {
-  @font-face { 
+@mixin font-face($path, $name, $weight: normal, $style: normal ) {
+  @font-face {
     font-family: #{$name};
-
-    src: url("#{$path}.woff") format("woff"),
+    src: url("#{$path}.eot");
+    src: local(""), url("#{$path}.woff") format("embedded-opentype"),
+      url("#{$path}.eot") format("embedded-opentype"),
+      url("#{$path}.ttf") format("truetype"),
+      url("#{$path}##{$name}") format("svg"),
       url("#{$path}.woff2") format("woff2");
 
-    font-style: $style; 
+    font-style: $style;
     font-weight: $weight;
-    font-display: swap; 
-    } 
-} 
-
+    font-display: swap;
+  }
+}
 
 @mixin max-width($width) {
   @media only screen and (max-width: $width) {
-      @content;
+    @content;
   }
 }
 
 @mixin min-width($width) {
   @media only screen and (min-width: $width) {
-      @content;
+    @content;
   }
 }
 
@@ -62,4 +65,3 @@
 @function rem($pixels, $context: $main-fz) {
   @return ($pixels/$context) * 1rem;
 }
-
