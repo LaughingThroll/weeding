@@ -1,0 +1,10 @@
+.navigate-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__pagination {
+    margin: 0 16px;
+    width: auto;
+  }
+}

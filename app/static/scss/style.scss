@@ -6,13 +6,6 @@
 @import 'utils/global';
 @import 'utils/themes';
 
-
-@import 'modules/header';
-@import 'modules/banner';
-@import 'modules/services';
-@import 'modules/offer';
-@import 'modules/footer';
-
 @import 'sub-modules/logo';
 @import 'sub-modules/main-menu';
 @import 'sub-modules/button';
@@ -27,5 +20,19 @@
 @import 'sub-modules/pagination';
 @import 'sub-modules/offer/offer-items';
 @import 'sub-modules/offer/offer-item';
+@import 'sub-modules/coaches/coaches-items';
+@import 'sub-modules/coaches/coaches-item';
+@import 'sub-modules/coaches/coaches-list';
+@import 'sub-modules/shadow-for-item';
+@import 'sub-modules/border-for-item';
+@import 'sub-modules/slider-arrow';
+@import 'sub-modules/navigate-slider';
+
+@import 'modules/header';
+@import 'modules/banner';
+@import 'modules/services';
+@import 'modules/offer';
+@import 'modules/coaches';
+@import 'modules/footer';
 
 @import 'utils/media';

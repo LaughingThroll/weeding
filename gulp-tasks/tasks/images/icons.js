@@ -25,8 +25,8 @@ module.exports = () => {
 			.pipe(pngFilter.restore)
 			.pipe(G.gulp.dest('dist/images/icons'))
 	})
-	
-	G.gulp.task('sprite:webp', function() {
+
+	G.gulp.task('sprite:webp', function () {
 		return G.gulp.src('dist/images/icons/*.png')
 			.pipe(G.webp())
 			.pipe(G.gulp.dest('dist/images/icons'))

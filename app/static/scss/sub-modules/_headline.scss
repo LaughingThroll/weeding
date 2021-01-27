@@ -12,12 +12,10 @@
   }
 
   &__paragraph {
-    margin-bottom: 48px;
     width: 100%;
     max-width: 670px;
 
     @include max-width(768px) {
-      margin-bottom: 32px;
       font-size: 13px;
       line-height: 20px;
     }

@@ -1,0 +1,9 @@
+.coaches {
+  &__headline {
+    margin-bottom: 24px;
+
+    @include max-width(920px) {
+      margin-bottom: 10px;
+    }
+  }
+}

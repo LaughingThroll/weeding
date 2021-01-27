@@ -1,0 +1,21 @@
+.slider-arrow {
+  width: 40px;
+  height: 28px;
+  transition: opacity $fast ease;
+
+  &__icon {
+    width: 100%;
+    height: 100%;
+
+  }
+  &--right {
+  }
+
+  &--left {
+    transform: rotate(-180deg);
+  }
+
+  &--disabled {
+    opacity: 0.3;
+  }
+}

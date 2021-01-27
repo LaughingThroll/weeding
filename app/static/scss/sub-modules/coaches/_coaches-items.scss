@@ -1,0 +1,21 @@
+// you must changes indent in JS on coaches-slider
+$indent: 26px;
+
+.coaches-items {
+  overflow-x: hidden;
+  margin: 0 -#{$indent};
+  padding: 24px $indent 0;
+
+  &__item {
+  }
+
+  &__navigate {
+    margin-top: 24px;
+  }
+
+  &__slider-arrow {
+    @include max-width(768px) {
+      display: none;
+    }
+  }
+}
