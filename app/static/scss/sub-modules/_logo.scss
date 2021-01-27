@@ -1,4 +1,7 @@
 .logo {
+  display: flex;
+  align-items: center;
+
   &__images {
     display: block;
     height: 17px;
