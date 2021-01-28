@@ -8,7 +8,7 @@ $vertical-padding-content: 16px;
   @include max-width(768px) {
     flex-direction: column;
   }
-  
+
   &__image {
     width: 100%;
     min-width: 250px;

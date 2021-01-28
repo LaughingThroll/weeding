@@ -4,7 +4,7 @@
       .pipe(G.filter(function (file) {
         return !/\/_/.test(file.path) && !/^_/.test(file.relative);
       }))
-            // Here not understand why fonts without quoutes 
+            // Here no understand why fonts without quoutes 
       .pipe(G.if(!G.isDevelopment ,G.criticalCss({
         inline: true,
         base: 'dist/',

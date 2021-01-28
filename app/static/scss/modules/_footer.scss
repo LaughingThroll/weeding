@@ -4,14 +4,14 @@
   color: $white;
   background-color: $footer-bg;
 
-  @include max-width(768px) {
-    padding: 20px 0;
-    height: 55px;
-  }
-
   &__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+
+  @include max-width(768px) {
+    padding: 20px 0;
+    height: 55px;
   }
 }

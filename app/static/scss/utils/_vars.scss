@@ -1,10 +1,11 @@
-// ALL_COLOR 
+// ALL_COLOR
 $white: #fff;
 $black: #000;
 $god-gray: #060606;
-$hotPink:  #FF699F;
-$wispPink: #FEF2F6;
-$main-shaft: #1F1F1F;
+$hotPink: #ff699f;
+$wispPink: #fef2f6;
+$main-shaft: #1f1f1f;
+$alto: rgba(207, 207, 207, 0.25);
 
 $main-bg: $white;
 $main-color: $black;
@@ -15,8 +16,8 @@ $button--secondary: $hotPink;
 $burger-color: $black;
 $mobile-menu-border: $hotPink;
 $mobile-menu-back: $wispPink;
-$services-item-shadow: rgba(207, 207, 207, 0.25);
-$services-item-border: rgba(0, 0, 0, 0.04);
+$main-shadow-item: $alto;
+$main-border-item: rgba(0, 0, 0, 0.04);
 $pagination-bullet: rgba(0, 0, 0, 0.1);
 $pagination-bullet--active: $hotPink;
 $offer-icon: $hotPink;
@@ -26,7 +27,7 @@ $header-height: 72px;
 $container-padding: 15px;
 
 // FONT
-$main-font: 'Montserrat', sans-serif;
+$main-font: "Montserrat", sans-serif;
 // + or - size * on number [.5, .75, 1.25, 1.5] for rem
 $main-fz: 16px;
 
@@ -35,7 +36,7 @@ $main-width: 1330px;
 
 // H1-H6
 h1,
-h2, 
+h2,
 h3,
 .h3-like {
   font-weight: 700;
@@ -50,7 +51,8 @@ h2 {
   font-size: 36px;
   line-height: 34px;
 }
-h3, .h3-like {
+h3,
+.h3-like {
   font-size: 24px;
   line-height: 25px;
 }
@@ -68,7 +70,7 @@ h3, .h3-like {
 // }
 
 // SPRITE
-$pathS: '../images/icons/sprite.png';
+$pathS: "../images/icons/sprite.png";
 
 // TRANSITION_TIMES
-$fast: .3s;
+$fast: 0.3s;
