@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Weeding Dance</title>
+
+	<link rel="icon" href="/images/favicon/favicon.ico">
+
+	<link rel="manifest" href="manifest.json">
+
+	<style>h1,h2{font-weight:700}h1{font-size:72px;line-height:68px}h2{font-size:36px;line-height:34px}@font-face{font-family:Montserrat;src:url(../fonts/Montserrat-Regular.eot);src:local(""),url(../fonts/Montserrat-Regular.woff) format("embedded-opentype"),url(../fonts/Montserrat-Regular.eot) format("embedded-opentype"),url(../fonts/Montserrat-Regular.ttf) format("truetype"),url(../fonts/Montserrat-Regular#Montserrat) format("svg"),url(../fonts/Montserrat-Regular.woff2) format("woff2");font-style:normal;font-weight:400;font-display:swap}@font-face{font-family:Montserrat;src:url(../fonts/Montserrat-Medium.eot);src:local(""),url(../fonts/Montserrat-Medium.woff) format("embedded-opentype"),url(../fonts/Montserrat-Medium.eot) format("embedded-opentype"),url(../fonts/Montserrat-Medium.ttf) format("truetype"),url(../fonts/Montserrat-Medium#Montserrat) format("svg"),url(../fonts/Montserrat-Medium.woff2) format("woff2");font-style:normal;font-weight:500;font-display:swap}@font-face{font-family:Montserrat;src:url(../fonts/Montserrat-SemiBold.eot);src:local(""),url(../fonts/Montserrat-SemiBold.woff) format("embedded-opentype"),url(../fonts/Montserrat-SemiBold.eot) format("embedded-opentype"),url(../fonts/Montserrat-SemiBold.ttf) format("truetype"),url(../fonts/Montserrat-SemiBold#Montserrat) format("svg"),url(../fonts/Montserrat-SemiBold.woff2) format("woff2");font-style:normal;font-weight:600;font-display:swap}@font-face{font-family:Montserrat;src:url(../fonts/Montserrat-Bold.eot);src:local(""),url(../fonts/Montserrat-Bold.woff) format("embedded-opentype"),url(../fonts/Montserrat-Bold.eot) format("embedded-opentype"),url(../fonts/Montserrat-Bold.ttf) format("truetype"),url(../fonts/Montserrat-Bold#Montserrat) format("svg"),url(../fonts/Montserrat-Bold.woff2) format("woff2");font-style:normal;font-weight:700;font-display:swap}@font-face{font-family:Montserrat;src:url(../fonts/Montserrat-Black.eot);src:local(""),url(../fonts/Montserrat-Black.woff) format("embedded-opentype"),url(../fonts/Montserrat-Black.eot) format("embedded-opentype"),url(../fonts/Montserrat-Black.ttf) format("truetype"),url(../fonts/Montserrat-Black#Montserrat) format("svg"),url(../fonts/Montserrat-Black.woff2) format("woff2");font-style:normal;font-weight:900;font-display:swap}html{-webkit-box-sizing:border-box;box-sizing:border-box;font-size:16px}body,html{height:100%}*,::after,::before{-webkit-box-sizing:inherit;box-sizing:inherit}body{margin:0;padding:0;font-family:Montserrat,sans-serif;color:#000;background-color:#fff;line-height:25px}h1,h2,p{margin:0;padding:0}button{border:none}button{padding:0;background-color:transparent}li,ul{list-style:none;margin:0;padding:0}a{display:inline-block;text-decoration:none}.images-wrapper img{display:block;width:100%;height:100%}.wrapper{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;overflow-x:hidden;min-height:100%}.content{-webkit-box-flex:1;-ms-flex:1 0 auto;flex:1 0 auto}.container{margin:0 auto;padding:0 15px;max-width:1330px}.freeze-animation{opacity:0;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards}@-webkit-keyframes fadeIn{0%{opacity:0}to{opacity:1}}@keyframes fadeIn{0%{opacity:0}to{opacity:1}}.fadeIn{-webkit-animation-name:fadeIn;animation-name:fadeIn}@-webkit-keyframes fadeInUp{0%{opacity:0;-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0)}to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0)}}@keyframes fadeInUp{0%{opacity:0;-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0)}to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0)}}.fadeInUp{-webkit-animation-name:fadeInUp;animation-name:fadeInUp}.logo{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.logo__images{display:block;height:17px}.main-menu__list{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.main-menu .main-menu__item+.main-menu__item{margin-left:24px}.main-menu__link{position:relative;font-weight:400;font-size:14px;line-height:16.41px;color:#000}.main-menu__hover::before{content:"";position:absolute;left:0;right:0;bottom:0;margin:0 auto;width:0;height:1px;background-color:#060606}.button{border:2px solid transparent;border-radius:3px;font-weight:600;line-height:24.54px}.button--main{border-color:#000;padding:5px 35px;color:#000}.button--secondary{border-color:#ff699f;padding:7px 30px;color:#ff699f}.subtitle{font-weight:500;font-size:24px;line-height:29px}.burger-btn{position:relative;z-index:12;padding:7px;width:39px}.burger-btn__line{display:block;border-radius:3px;width:100%;height:2px;background-color:#000}.burger-btn__line:not(:last-child){margin-bottom:2px}.headline{margin-bottom:48px}.headline__title{margin-bottom:24px}.headline__paragraph{width:100%;max-width:670px}.main-section{padding-top:100px}.services-item{height:auto}.services-item__images img{height:28vw;min-height:285px;-o-object-fit:cover;object-fit:cover}.services-items .services-items__item+.services-items__item{-webkit-box-flex:0;-ms-flex:0 1 calc(33.3333% - 16px);flex:0 1 calc(33.3333% - 16px);margin-left:16px}.services-items__item{-webkit-box-flex:0;-ms-flex:0 1 33.3333%;flex:0 1 33.3333%;min-width:285px}.services-items .services-items__pagination{display:none;margin-top:12px}.pagination{position:static;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.shadow-for-item{-webkit-box-shadow:0 4px 30px rgba(207,207,207,.25);box-shadow:0 4px 30px rgba(207,207,207,.25)}.border-for-item{overflow:hidden;border:1px solid rgba(0,0,0,.04);border-radius:2px}.header{position:fixed;left:0;right:0;top:0;bottom:0;z-index:33;padding:19px 0 17px;width:100%;height:72px;background-color:#fff}.header__container{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.header__main-menu{margin-left:auto}.header__button{margin-left:35px}.header__burger-btn{display:none}.banner{padding-top:72px}.banner__container{display:-webkit-box;display:-ms-flexbox;display:flex}.banner__content{padding:73px 77px 80px 0;width:100%;max-width:532px}.banner__title{margin-bottom:16px}.banner__paragraph,.banner__subtitle{margin-bottom:40px}.banner__images{width:100%}.banner__images img{-o-object-fit:cover;object-fit:cover}@media only screen and (max-width:1024px){.main-section{padding-top:80px}.banner__container{-webkit-box-orient:vertical;-webkit-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}.banner__content{padding:50px 59px 0 0;max-width:100%}.banner__images{width:calc(100% + 15px * 2);height:500px;-webkit-transform:translateX(-15px);transform:translateX(-15px)}}@media only screen and (max-width:920px){.headline{margin-bottom:32px}.services-items .services-items__item+.services-items__item{margin-left:0}.services-items .services-items__pagination{display:-webkit-box;display:-ms-flexbox;display:flex}.services__container{padding-right:0}}@media only screen and (max-width:800px){.header__button,.main-menu .main-menu__item+.main-menu__item{margin-left:15px}}@media only screen and (max-width:768px){.main-menu__list{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start}.main-menu .main-menu__item+.main-menu__item{margin-top:40px;margin-left:0}.main-menu__link{font-weight:700;font-size:24px;line-height:23px}.burger-btn{margin-left:auto}.headline__title{margin-bottom:12px;font-size:24px;line-height:23px}.headline__paragraph{font-size:13px;line-height:20px}.main-section{padding-top:56px}.header{height:57px}.header__button{margin-left:0}.header__burger-btn{display:block}.banner{padding-top:57px}.services{padding-top:56px}}@media only screen and (max-width:500px){.banner__content{padding:32px 59px 0 0}.banner__title{margin-bottom:11px;font-size:36px;line-height:34px}.banner__subtitle{margin-bottom:18px;font-size:14px;line-height:17px}.banner__paragraph{margin-bottom:35px;font-size:14px;line-height:21px}.banner__images{height:275px}}button{overflow:visible}.swiper-slide,.swiper-wrapper{position:relative}html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}a{background-color:transparent}img{border-style:none}button{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button{text-transform:none}button{-webkit-appearance:button}button::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring{outline:ButtonText dotted 1px}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}:root{--swiper-theme-color:#007aff;--swiper-navigation-size:44px}.swiper-wrapper{width:100%;height:100%;z-index:1;display:flex;box-sizing:content-box}.swiper-wrapper{transform:translate3d(0,0,0)}.swiper-slide{flex-shrink:0;width:100%;height:100%}.swiper-pagination{position:absolute;text-align:center;transform:translate3d(0,0,0);z-index:10}</style>
+	<link rel="stylesheet" href="css/libs.min.css" media="print" onload="this.media='all'">
+	<link rel="stylesheet" href="css/style.min.css" media="print" onload="this.media='all'">
+
+</head>
+
+<body>
+
+	<noscript> Be human, turn JavaScript </noscript>
+
+	<div class="wrapper">
+		<main class="content">
+
+			<header class="header">
+				<div class="container header__container">
+					<a href="#" class="header__logo logo">
+						<img class="logo__images" src="images/content/logo--black.svg" alt="Logotype Weeding Dance">
+					</a>
+					<nav class="header__main-menu main-menu" data-mobile-word="menu">
+						<ul class="main-menu__list">
+							<li class="main-menu__item"><a href="#" class="main-menu__link"><span
+										class="main-menu__hover">Services</span></a></li>
+							<li class="main-menu__item"><a href="#" class="main-menu__link"><span class="main-menu__hover">Our
+										Coaches</span></a></li>
+							<li class="main-menu__item"><a href="#" class="main-menu__link"><span
+										class="main-menu__hover">Testimonials</span></a></li>
+							<li class="main-menu__item"><a href="#" class="main-menu__link"><span
+										class="main-menu__hover">FAQ</span></a></li>
+							<li class="main-menu__item"><a href="#" class="main-menu__link"><span class="main-menu__hover">Lesson
+										Review</span></a></li>
+						</ul>
+					</nav>
+					<button class="header__button button button--main">Start</button>
+					<button class="header__burger-btn burger-btn">
+						<span class="burger-btn__line"></span>
+						<span class="burger-btn__line"></span>
+						<span class="burger-btn__line"></span>
+					</button>
+				</div>
+			</header>
+
+			<section class="banner">
+				<div class="container banner__container">
+					<div class="banner__content">
+						<h1 class="banner__title wow fadeInUp" data-wow-duration="1s">Wedding Dance Lessons</h1>
+						<div class="banner__subtitle subtitle wow fadeInUp" data-wow-duration="1s" data-wow-duration="1.5s" >New Jersey</div>
+						<p class="banner__paragraph wow fadeIn freeze-animation" data-wow-duration="1s" data-wow-delay="1s">The wedding dance is one of the most important dances in your life. You look
+							perfect and the whole audience is looking at you. Also, it becomes the favorite moment you like to play on
+							videos and photos. Feel the moment</p>
+						<button class="button button--secondary wow fadeIn freeze-animation" data-wow-duration="1s" data-wow-delay="1s">Let's start</button>
+					</div>
+					<picture class="banner__images images-wrapper wow fadeIn freeze-animation" data-wow-duration="1s" data-wow-delay="1s">
+						<source
+							srcset="images/content/banner-images.webp 1x, images/content/banner-images@2x.webp 2x, images/content/banner-images@3x.webp 3x">
+						<source
+							srcset="images/content/banner-images.jpg 1x, images/content/banner-images@2x.jpg 2x, images/content/banner-images@3x.jpg 3x">
+						<img src="images/content/banner-images.jpg" alt="First Dance">
+					</picture>
+				</div>
+			</section>
+
+			<section class="services main-section">
+
+				<div class="container headline wow fadeInUp" data-wow-duration="1s" data-wow-offset="300">
+					<h2 class="headline__title services__title">Our Services</h2>
+					<p class="headline__paragraph services__paragraph">We want to make your wedding day perfect that is why
+						suggest a
+						lot of
+						options for dance: not only for a bride and groom but for their friends and relatives</p>
+				</div>
+
+				<div class="container services__container">
+					<div class="services__items services-items">
+						<div class="swiper-wrapper">
+							<div class="services-items__item services-item shadow-for-item border-for-item swiper-slide">
+								<picture class="images-wrapper services-item__images">
+									<source
+										srcset="images/content/services/services-image--1.webp 1x, images/content/services/services-image--1@2x.webp 2x, images/content/services/services-image--1@3x.webp 3x">
+									<source
+										srcset="images/content/services/services-image--1.jpg 1x, images/content/services/services-image--1@2x.jpg 2x, images/content/services/services-image--1@3x.jpg 3x">
+									<img src="images/content/services/services-image--1.jpg" alt="dance girl and boy">
+								</picture>
+
+								<div class="services-item__content">
+									<h3 class="services-item__title">For Bride and Groom</h3>
+									<ul class="services-list">
+										<li class="services-list__item"><a href="#" class="services-list__link">First Dance</a></li>
+										<li class="services-list__item"><a href="#" class="services-list__link">Parent & Child Dance</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="services-items__item services-item shadow-for-item border-for-item swiper-slide">
+								<picture class="images-wrapper services-item__images">
+									<source
+										srcset="images/content/services/services-image--2.webp 1x, images/content/services/services-image--2@2x.webp 2x, images/content/services/services-image--2@3x.webp 3x">
+									<source
+										srcset="images/content/services/services-image--2.jpg 1x, images/content/services/services-image--2@2x.jpg 2x, images/content/services/services-image--2@3x.jpg 3x">
+									<img src="images/content/services/services-image--2.jpg" alt="girl with flowers">
+								</picture>
+								<div class="services-item__content">
+									<h3 class="services-item__title">For Guests</h3>
+									<ul class="services-list">
+										<li class="services-list__item"><a href="#" class="services-list__link">Groomsmen Dance</a></li>
+										<li class="services-list__item"><a href="#" class="services-list__link">Parent Dance</a></li>
+										<li class="services-list__item"><a href="#" class="services-list__link">Children’s Dance</a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="services-items__item services-item shadow-for-item border-for-item swiper-slide">
+								<picture class="images-wrapper services-item__images">
+									<source
+										srcset="images/content/services/services-image--3.webp 1x, images/content/services/services-image--3@2x.webp 2x, images/content/services/services-image--3@3x.webp 3x">
+									<source
+										srcset="images/content/services/services-image--3.jpg 1x, images/content/services/services-image--3@2x.jpg 2x, images/content/services/services-image--3@3x.jpg 3x">
+									<img src="images/content/services/services-image--3.jpg" alt="weedings on porch">
+								</picture>
+								<div class="services-item__content">
+									<h3 class="services-item__title">Other events</h3>
+									<ul class="services-list">
+										<li class="services-list__item"><a href="#" class="services-list__link">Bridal Party Dance</a></li>
+										<li class="services-list__item"><a href="#" class="services-list__link">Anniversary Dance</a></li>
+									</ul>
+								</div>
+							</div>
+
+
+							<!-- <div class="services-items__item services-item shadow-for-item border-for-item swiper-slide">
+								<picture class="images-wrapper services-item__images">
+									<source
+										srcset="images/content/services/services-image--3.webp 1x, images/content/services/services-image--3@2x.webp 2x, images/content/services/services-image--3@3x.webp 3x">
+									<source
+										srcset="images/content/services/services-image--3.jpg 1x, images/content/services/services-image--3@2x.jpg 2x, images/content/services/services-image--3@3x.jpg 3x">
+									<img src="images/content/services/services-image--3.jpg" alt="weedings on porch">
+								</picture>
+								<div class="services-item__content">
+									<h3 class="services-item__title">Other events</h3>
+									<ul class="services-list">
+										<li class="services-list__item"><a href="#" class="services-list__link">Bridal Party Dance</a></li>
+										<li class="services-list__item"><a href="#" class="services-list__link">Anniversary Dance</a></li>
+									</ul>
+								</div>
+							</div> -->
+
+						</div>
+
+						<div class="swiper-pagination pagination pagination--bullet services-items__pagination"></div>
+
+					</div>
+				</div>
+			</section>
+
+			<section class="offer main-section">
+				<div class="container">
+					<div class="headline wow fadeInUp" data-wow-duration="1s" data-wow-offset="300">
+						<h2 class="headline__title">What we offer</h2>
+						<p class="headline__paragraph">Our goal is not only to teach you how to dance but also give the best
+							unforgettable memories about preparing to your event</p>
+					</div>
+					<div class="offer__items offer-items">
+						<div class="offer-items__item offer-item icon icon-users">
+							<p class="offer-item__paragraph">Talented Coaches</p>
+						</div>
+						<div class="offer-items__item offer-item icon icon-door">
+							<p class="offer-item__paragraph">Cozy rooms for training</p>
+						</div>
+						<div class="offer-items__item offer-item icon icon-coffee">
+							<p class="offer-item__paragraph">Coffee, tea, and cookies</p>
+						</div>
+						<div class="offer-items__item offer-item icon icon-waist">
+							<p class="offer-item__paragraph">Good physical form</p>
+						</div>
+						<div class="offer-items__item offer-item icon icon-star">
+							<p class="offer-item__paragraph">Self Confidence and success on your event</p>
+						</div>
+						<div class="offer-items__item offer-item icon icon--medium icon-two-boys ">
+							<p class="offer-item__paragraph">Exciting emotionsand a lot of fun</p>
+						</div>
+						<div class="offer-items__item offer-item icon icon-images">
+							<p class="offer-item__paragraph">Great photos from
+								your event</p>
+						</div>
+						<div class="offer-items__item offer-item icon icon-two-smiles">
+							<p class="offer-item__paragraph">Spend hours together
+								in happiness</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="main-section coaches">
+				<div class="container headline coaches__headline wow fadeInUp" data-wow-duration="1s" data-wow-offset="300">
+					<h2 class="headline__title">Our Coaches</h2>
+					<p class="headline__paragraph">Coaches in our school are not only perfect dancers but also have a big
+						experience in coaching that is why you will feel really amazing after each of your class</p>
+				</div>
+				<div class="container coaches__container">
+					<div class="coaches-items swiper-container">
+						<div class="swiper-wrapper">
+
+							<div class="coaches-items__item swiper-slide coaches-item border-for-item">
+								<picture class="coaches-item__image images-wrapper">
+									<source
+										srcset="images/content/coaches/coacher.webp 1x, images/content/coaches/coacher@2x.webp 2x, images/content/coaches/coacher@3x.webp 3x">
+									<source
+										srcset="images/content/coaches/coacher.jpg 1x, images/content/coaches/coacher@2x.jpg 2x, images/content/coaches/coacher@3x.jpg 3x">
+									<img src="images/content/coaches/coacher.jpg" alt="coacher, girl dancer">
+								</picture>
+								<div class="coaches-item__content">
+									<div class="coaches-item__index" data-counter></div>
+									<div class="coaches-item__name h3-like">Ann Walker</div>
+									<div class="coaches-item__job">dancer</div>
+									<ul class="coaches-item__list coaches-list">
+										<li class="coaches-list__item"><span class="coaches-list__key">Work experience</span><span
+												class="coaches-list__value">8 years</span></li>
+										<li class="coaches-list__item"><span class="coaches-list__key">Teacher for</span><span
+												class="coaches-list__value">3 years</span></li>
+										<li class="coaches-list__item"><span class="coaches-list__key">Style</span><span
+												class="coaches-list__value">Viennese Waltz, Salsa</span></li>
+									</ul>
+									<button class="button button--secondary coaches-item__button ">Let's start</button>
+								</div>
+							</div>
+
+							<div class="coaches-items__item swiper-slide coaches-item border-for-item">
+								<picture class="coaches-item__image images-wrapper">
+									<source
+										srcset="images/content/coaches/coacher.webp 1x, images/content/coaches/coacher@2x.webp 2x, images/content/coaches/coacher@3x.webp 3x">
+									<source
+										srcset="images/content/coaches/coacher.jpg 1x, images/content/coaches/coacher@2x.jpg 2x, images/content/coaches/coacher@3x.jpg 3x">
+									<img src="images/content/coaches/coacher.jpg" alt="coacher, girl dancer">
+								</picture>
+								<div class="coaches-item__content">
+									<div class="coaches-item__index" data-counter></div>
+									<div class="coaches-item__name h3-like">Tom Wilspon</div>
+									<div class="coaches-item__job">dancer</div>
+									<ul class="coaches-item__list coaches-list">
+										<li class="coaches-list__item"><span class="coaches-list__key">Work experience</span><span
+												class="coaches-list__value">10 years</span></li>
+										<li class="coaches-list__item"><span class="coaches-list__key">Teacher for</span><span
+												class="coaches-list__value">5 years</span></li>
+										<li class="coaches-list__item"><span class="coaches-list__key">Style</span><span
+												class="coaches-list__value">HipHop</span></li>
+									</ul>
+									<button class="button button--secondary coaches-item__button ">Let's start</button>
+								</div>
+							</div>
+
+							<div class="coaches-items__item swiper-slide coaches-item border-for-item ">
+								<picture class="coaches-item__image images-wrapper">
+									<source
+										srcset="images/content/coaches/coacher.webp 1x, images/content/coaches/coacher@2x.webp 2x, images/content/coaches/coacher@3x.webp 3x">
+									<source
+										srcset="images/content/coaches/coacher.jpg 1x, images/content/coaches/coacher@2x.jpg 2x, images/content/coaches/coacher@3x.jpg 3x">
+									<img src="images/content/coaches/coacher.jpg" alt="coacher, girl dancer">
+								</picture>
+								<div class="coaches-item__content">
+									<div class="coaches-item__index" data-counter></div>
+									<div class="coaches-item__name h3-like">Ann Walker</div>
+									<div class="coaches-item__job">dancer</div>
+									<ul class="coaches-item__list coaches-list">
+										<li class="coaches-list__item"><span class="coaches-list__key">Work experience</span><span
+												class="coaches-list__value">10 years</span></li>
+										<li class="coaches-list__item"><span class="coaches-list__key">Teacher for</span><span
+												class="coaches-list__value">5 years</span></li>
+										<li class="coaches-list__item"><span class="coaches-list__key">Style</span><span
+												class="coaches-list__value">HipHop</span></li>
+									</ul>
+									<button class="button button--secondary coaches-item__button ">Let's start</button>
+								</div>
+							</div>
+
+							<div class="coaches-items__item swiper-slide coaches-item border-for-item">
+								<picture class="coaches-item__image images-wrapper">
+									<source
+										srcset="images/content/coaches/coacher.webp 1x, images/content/coaches/coacher@2x.webp 2x, images/content/coaches/coacher@3x.webp 3x">
+									<source
+										srcset="images/content/coaches/coacher.jpg 1x, images/content/coaches/coacher@2x.jpg 2x, images/content/coaches/coacher@3x.jpg 3x">
+									<img src="images/content/coaches/coacher.jpg" alt="coacher, girl dancer">
+								</picture>
+								<div class="coaches-item__content">
+									<div class="coaches-item__index" data-counter></div>
+									<div class="coaches-item__name h3-like">Tom Wilpson</div>
+									<div class="coaches-item__job">dancer</div>
+									<ul class="coaches-item__list coaches-list">
+										<li class="coaches-list__item"><span class="coaches-list__key">Work experience</span><span
+												class="coaches-list__value">10 years</span></li>
+										<li class="coaches-list__item"><span class="coaches-list__key">Teacher for</span><span
+												class="coaches-list__value">5 years</span></li>
+										<li class="coaches-list__item"><span class="coaches-list__key">Style</span><span
+												class="coaches-list__value">HipHop</span></li>
+									</ul>
+									<button class="button button--secondary coaches-item__button ">Let's start</button>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="coaches-items__navigate navigate-slider">
+							<button class="coaches-items__slider-arrow slider-arrow slider-arrow--left">
+								<svg class="svg-icon slider-arrow__icon">
+									<use xlink:href="images/icons/sprite.svg#arrow"></use>
+								</svg>
+							</button>
+							<div class="navigate-slider__pagination pagination pagination--fraction coaches-items__pagination"></div>
+							<button class="coaches-items__slider-arrow slider-arrow slider-arrow--right">
+								<svg class="svg-icon slider-arrow__icon">
+									<use xlink:href="images/icons/sprite.svg#arrow"></use>
+								</svg>
+							</button>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+		</main>
+		<footer class="footer">
+			<div class="container footer__container">
+				<a href="#" class="logo">
+					<img src="images/content/logo--white.svg" alt="White Weeding Dance">
+				</a>
+				<small class="footer__coopyright">Copyright &copy; 2019 </small>
+			</div>
+		</footer>
+	</div>
+
+	<script src="js/vendor.min.js"></script>
+	<script src="js/main.min.js"></script>
+
+<noscript><link rel="stylesheet" href="css/libs.min.css"></noscript>
+
+
+<noscript><link rel="stylesheet" href="css/style.min.css"></noscript>
+
+</body>
+
+</html>

@@ -1,9 +1,0 @@
-.DS_Store
-.AppleDouble
-.LSOverride
-.vscode
-debug.log
-
-dist 
-build
-node_modules
