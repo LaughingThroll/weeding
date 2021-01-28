@@ -9,8 +9,8 @@
         inline: true,
         base: 'dist/',
         css: ['dist/css/style.min.css', 'dist/css/libs.min.css'],
-        extract: true,
-        minify: false
+        extract: false,
+        minify: true
       })))
 
       .pipe(G.gulp.dest('dist'))
