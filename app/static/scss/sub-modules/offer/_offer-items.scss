@@ -43,16 +43,6 @@ $margin-flex: #{$main-margin * 2};
     }
   }
 
-  .icon-two-boys::before {
-    font-size: 80px;
-    line-height: 80px;
-
-    @include max-width(620px) {
-      font-size: 55px;
-      line-height: 55px;
-    }
-  }
-
   @include max-width(620px) {
     margin: 0 -#{$main-margin};
     padding: 0;

@@ -3,17 +3,28 @@
   border-radius: 3px;
   font-weight: 600;
   line-height: 24.54px;
+  transition: color $fast ease, background-color $fast ease;
 
   &--main {
     border-color: $button--main;
     padding: 5px 35px;
     color: $button--main;
+
+    &:hover {
+      color: $white;
+      background-color: $button--main;
+    }
   }
 
   &--secondary {
     border-color: $button--secondary;
     padding: 7px 30px;
     color: $button--secondary;
+
+    &:hover {
+      color: $white;
+      background-color: $button--secondary;
+    }
   }
 
   &--circle {

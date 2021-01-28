@@ -30,7 +30,7 @@ export const coachesSliderOptions = {
   breakpoints: {
     1024: {
       slidesPerView: 2,
-      spaceBetween: 26,
+      spaceBetween: 28,
       ...coachesNavigate
     },
     768: {

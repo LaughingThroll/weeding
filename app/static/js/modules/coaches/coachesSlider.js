@@ -1,8 +1,8 @@
-import { removeClassOnSwiper, addClassOnSwiper } from '../../utils/fnForSwiper' 
+import { removeClassOnSwiper, addClassOnSwiper } from '../../utils/fnForSwiper'
 
-function coachesSliderChange({ slides }) {
+function coachesSliderChange({ slides } /* Swiper Event*/) {
   window.setTimeout(() => {
-    
+
     removeClassOnSwiper(slides, 'shadow-for-item')
     removeClassOnSwiper(slides, 'border-for-item')
 
@@ -13,19 +13,25 @@ function coachesSliderChange({ slides }) {
       if (!slide.classList.contains('swiper-slide-prev')) slide.classList.add('border-for-item')
     })
 
-  }, 0) 
+  }, 0)
 }
 
-function maxWidthCoachesSlider(slider, slideChangeFn) {
+function maxWidthCoachesSlider(slider /*Swiper Slider*/, slideChangeFn /* typeof Function */) {
   if (slider.eventsListeners?.slideChange?.length) {
     slider.off('slideChange', slideChangeFn)
-    addClassOnSwiper(slider.slides, 'border-for-item')
-    addClassOnSwiper(slider.slides, 'shadow-for-item')
-  } 
+    
+    window.setTimeout(() => {
+      addClassOnSwiper(slider.slides, 'border-for-item')
+      addClassOnSwiper(slider.slides, 'shadow-for-item')
+    }, 0)
+
+  }
 }
 
-function minWidthCoachesSlider(slider, slideChangeFn) {
-  if (!slider.eventsListeners?.slideChange?.length) slider.on('slideChange', slideChangeFn)
+function minWidthCoachesSlider(slider /*Swiper Slider*/, slideChangeFn /* typeof Function */) {
+  if (!slider.eventsListeners.slideChange.length) {
+    slider.on('slideChange', slideChangeFn)
+  }
 }
 
 export { coachesSliderChange, maxWidthCoachesSlider, minWidthCoachesSlider }

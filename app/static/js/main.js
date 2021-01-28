@@ -59,8 +59,8 @@ window.addEventListener('DOMContentLoaded', function () {
     920
   )
 
-
   const coachesSlider = new Swiper(`.${COACHES_ITEMS}`, coachesSliderOptions)
+
   counterInElement(`.${COACHES_ITEMS} [data-counter]`)
 
   if (window.innerWidth > 768) coachesSlider.on('init slideChange', coachesSliderChange)
@@ -71,10 +71,10 @@ window.addEventListener('DOMContentLoaded', function () {
     768)
 
   const adaptiveCoachesSlider = adaptive(
-    maxWidthCoachesSlider.bind(this, coachesSlider),
-    minWidthCoachesSlider.bind(this, coachesSlider),
+    maxWidthCoachesSlider.bind(this, coachesSlider, coachesSliderChange),
+    minWidthCoachesSlider.bind(this, coachesSlider, coachesSliderChange),
     1024)
-
+    
   const adaptiveCoachesPagination = adaptive(
     createBulletPaginationForCoaches.bind(this, coachesSlider, $coachesPagination),
     createFractionPaginationForCoaches.bind(this, coachesSlider, $coachesPagination),
@@ -104,5 +104,4 @@ window.addEventListener('DOMContentLoaded', function () {
     scrollHiddenBody()
     toggler(toggleClasses)
   })
-
 })
