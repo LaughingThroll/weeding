@@ -7,7 +7,8 @@
 
   &--main {
     border-color: $button--main;
-    padding: 5px 35px;
+    padding: 5px 10px;
+    min-width: 100px;
     color: $button--main;
 
     &:hover {
@@ -18,7 +19,8 @@
 
   &--secondary {
     border-color: $button--secondary;
-    padding: 7px 30px;
+    padding: 7px 10px;
+    min-width: 140px;
     color: $button--secondary;
 
     &:hover {
@@ -33,6 +35,7 @@
     padding: 0;
     width: 33px;
     height: 33px;
+    min-width: auto;
 
     &::before {
       position: absolute;

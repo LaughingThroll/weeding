@@ -3,8 +3,8 @@ const optionsResponsive = {
   withoutEnlargement: false,
   progressive: !G.development,
   withMetadata: false,
-  quality: 60,
-  compressionLevel: G.development ? 0 : 8,
+  quality: 80,
+  compressionLevel: G.development ? 0 : 4,
   errorOnUnusedConfig: false
 
 }
@@ -64,7 +64,7 @@ module.exports = () => {
       .pipe(responsive('{jpeg,jpg}'))
       .pipe(G.if(!G.isDevelopment, G.imagemin([
         G.imageminMozjpeg({
-          quality: 60, progressive: true, tune: "ms-ssim"
+          quality: 80, progressive: true, tune: "ms-ssim"
         })
       ])))
       .pipe(G.gulp.dest(destPath))
@@ -93,7 +93,7 @@ module.exports = () => {
   G.gulp.task('webp', function () {
     return G.gulp.src(allFormat)
       .pipe(G.webp({
-        quality: 60,
+        quality: 80,
         method: G.isDevelopment ? 0 : 3
       }))
       .pipe(responsive('webp'))

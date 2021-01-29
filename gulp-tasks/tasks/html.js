@@ -10,7 +10,7 @@
         base: 'dist/',
         css: ['dist/css/style.min.css', 'dist/css/libs.min.css'],
         extract: false,
-        minify: false
+        minify: true
       })))
 
       .pipe(G.gulp.dest('dist'))
