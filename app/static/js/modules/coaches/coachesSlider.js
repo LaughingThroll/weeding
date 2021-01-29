@@ -29,7 +29,7 @@ function maxWidthCoachesSlider(slider /*Swiper Slider*/, slideChangeFn /* typeof
 }
 
 function minWidthCoachesSlider(slider /*Swiper Slider*/, slideChangeFn /* typeof Function */) {
-  if (!slider.eventsListeners.slideChange.length) {
+  if (!slider.eventsListeners.slideChange?.length) {
     slider.on('slideChange', slideChangeFn)
   }
 }

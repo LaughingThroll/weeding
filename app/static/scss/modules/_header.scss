@@ -46,8 +46,13 @@
   }
 
   &--active {
-    .mobile-menu {
-      transform: translateY(0);
+    background-color: transparent;
+
+    .header__logo {
+      display: none;
     }
+    // .mobile-menu {
+    // transform: translateY(0);
+    // }
   }
 }

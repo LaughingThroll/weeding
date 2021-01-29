@@ -30,21 +30,24 @@ window.addEventListener('DOMContentLoaded', function () {
   const $mainMenu = $header.querySelector('.main-menu')
   const $headerBtn = $header.querySelector('.header__button')
   const $burgerBtn = $header.querySelector('.burger-btn')
+  const $mobileMenu = document.querySelector('.mobile-menu')
   const $servicesItems = document.querySelector('.services-items')
   const $coachesButtons = document.querySelectorAll('.coaches-item__button')
   const $coachesPagination = document.querySelector(`.${COACHES_ITEMS}__pagination`)
   let servicesSlider
-
+  
+  
   const childrenForAppendArray = [$mainMenu, $headerBtn]
 
   const toggleClasses = {
     'header--active': $header,
-    'burger-btn--active': $burgerBtn
+    'burger-btn--active': $burgerBtn,
+    'mobile-menu--active': $mobileMenu
   }
 
   const adaptiveHeader = adaptive(
-    maxWidthHeader.bind(this, $headerContainer, childrenForAppendArray, $headerBtn),
-    minWidthHeader.bind(this, $headerContainer, childrenForAppendArray, $headerBtn),
+    maxWidthHeader.bind(this, $mainMenu, childrenForAppendArray, $headerBtn),
+    minWidthHeader.bind(this, $headerContainer, $mainMenu, childrenForAppendArray, $headerBtn),
     768
   )
 

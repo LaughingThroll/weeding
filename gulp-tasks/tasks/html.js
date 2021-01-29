@@ -5,13 +5,13 @@
         return !/\/_/.test(file.path) && !/^_/.test(file.relative);
       }))
             // Here no understand why fonts without quoutes 
-      .pipe(G.if(!G.isDevelopment ,G.criticalCss({
-        inline: true,
-        base: 'dist/',
-        css: ['dist/css/style.min.css', 'dist/css/libs.min.css'],
-        extract: false,
-        minify: true
-      })))
+      // .pipe(G.if(!G.isDevelopment ,G.criticalCss({
+        // inline: true,
+        // base: 'dist/',
+        // css: ['dist/css/style.min.css', 'dist/css/libs.min.css'],
+        // extract: false,
+        // minify: true
+      // })))
 
       .pipe(G.gulp.dest('dist'))
       .pipe(G.browserSync.reload({ stream: true }))

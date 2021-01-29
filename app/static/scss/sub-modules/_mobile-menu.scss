@@ -6,7 +6,7 @@ $padding-top: 40px;
   right: 0;
   top: 0;
   bottom: 0;
-  z-index: 9;
+  z-index: 32;
   display: none;
   overflow-x: hidden;
   border-bottom: 4px solid $mobile-menu-border;
@@ -41,9 +41,9 @@ $padding-top: 40px;
     margin-top: 48px;
   }
 
-  // &--active {
-  //   transform: translateY(0);
-  // }
+  &--active {
+    transform: translateY(0);
+  }
 
   @include max-width(768px) {
     display: block;

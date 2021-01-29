@@ -93,8 +93,8 @@ module.exports = () => {
   G.gulp.task('webp', function () {
     return G.gulp.src(allFormat)
       .pipe(G.webp({
-        quality: 90,
-        method: G.isDevelopment ? 0 : 6
+        quality: 60,
+        method: G.isDevelopment ? 0 : 3
       }))
       .pipe(responsive('webp'))
       .pipe(G.gulp.dest(destPath))
