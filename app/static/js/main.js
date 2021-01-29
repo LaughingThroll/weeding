@@ -13,7 +13,6 @@ import adaptive from './utils/adaptive'
 import counterInElement from './utils/counterInElement'
 // Modules
 import { maxWidthHeader, minWidthHeader } from './modules/header'
-import { initServicesSlider, destroyServicesSlider } from './modules/services'
 import { minWidthCoachesSlider, maxWidthCoachesSlider, coachesSliderChange } from './modules/coaches/coachesSlider'
 import { createBulletPaginationForCoaches, createFractionPaginationForCoaches } from './modules/coaches/coachesPagination'
 import { createCircleButton, destroyCircleButton } from './modules/circleButton'
@@ -35,8 +34,7 @@ window.addEventListener('DOMContentLoaded', function () {
   const $coachesButtons = document.querySelectorAll('.coaches-item__button')
   const $coachesPagination = document.querySelector(`.${COACHES_ITEMS}__pagination`)
   let servicesSlider
-  
-  
+
   const childrenForAppendArray = [$mainMenu, $headerBtn]
 
   const toggleClasses = {
@@ -53,15 +51,20 @@ window.addEventListener('DOMContentLoaded', function () {
 
   if ($servicesItems.children[0].children.length >= 4) {
     $servicesItems.classList.add('services-items--disable-flex')
-    servicesSlider = new Swiper(`.${SERVICES_ITEMS} `, servicesSliderOptions)
+    servicesSlider = new Swiper(`.${SERVICES_ITEMS}`, servicesSliderOptions)
   }
 
+  // it's like a crutch need refactoring
   const adaptiveServices = adaptive(
-    initServicesSlider.bind(this, servicesSlider, `.${SERVICES_ITEMS}`, servicesSliderOptions),
-    destroyServicesSlider.bind(this, servicesSlider, `.${SERVICES_ITEMS}`),
+    () => {
+      if (!servicesSlider || servicesSlider?.destroyed) servicesSlider = new Swiper(`.${SERVICES_ITEMS}`, servicesSliderOptions)
+    },
+    () => {
+      if (servicesSlider?.initialized && document.querySelector(`.${SERVICES_ITEMS}`).children[0].children.length < 4) servicesSlider.destroy()
+    },
     920
   )
-
+    
   const coachesSlider = new Swiper(`.${COACHES_ITEMS}`, coachesSliderOptions)
 
   counterInElement(`.${COACHES_ITEMS} [data-counter]`)
