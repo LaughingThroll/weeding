@@ -1,4 +1,8 @@
 .icon {
+  &::before {
+    font-display: swap;
+  }
+
   &--medium {
     &::before {
       font-size: 80px;

@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Weeding Dance</title>
 
-	<link rel="icon" href="/images/favicon/favicon.ico">
+	<link rel="icon" href="images/favicon/favicon.ico">
 
 	<link rel="manifest" href="manifest.json">
 
@@ -41,8 +41,9 @@
 										Review</span></a></li>
 						</ul>
 					</nav>
-					<button class="header__button button button--main">Start</button>
-					<button class="header__burger-btn burger-btn">
+					<button class="header__button button button--main" aria-label="Do something">Start</button>
+					
+					<button class="header__burger-btn burger-btn" aria-label="This is button for mobile">
 						<span class="burger-btn__line"></span>
 						<span class="burger-btn__line"></span>
 						<span class="burger-btn__line"></span>
@@ -93,7 +94,7 @@
 								</picture>
 
 								<div class="services-item__content">
-									<h3 class="services-item__title">For Bride and Groom</h3>
+									<div class="services-item__title h3-like">For Bride and Groom</div>
 									<ul class="services-list">
 										<li class="services-list__item"><a href="#" class="services-list__link">First Dance</a></li>
 										<li class="services-list__item"><a href="#" class="services-list__link">Parent & Child Dance</a>
@@ -111,7 +112,7 @@
 									<img src="images/content/services/services-image--2.jpg" alt="girl with flowers">
 								</picture>
 								<div class="services-item__content">
-									<h3 class="services-item__title">For Guests</h3>
+									<div class="services-item__title h3-like">For Guests</div>
 									<ul class="services-list">
 										<li class="services-list__item"><a href="#" class="services-list__link">Groomsmen Dance</a></li>
 										<li class="services-list__item"><a href="#" class="services-list__link">Parent Dance</a></li>
@@ -129,7 +130,7 @@
 									<img src="images/content/services/services-image--3.jpg" alt="weedings on porch">
 								</picture>
 								<div class="services-item__content">
-									<h3 class="services-item__title">Other events</h3>
+									<div class="services-item__title h3-like">Other events</div>
 									<ul class="services-list">
 										<li class="services-list__item"><a href="#" class="services-list__link">Bridal Party Dance</a></li>
 										<li class="services-list__item"><a href="#" class="services-list__link">Anniversary Dance</a></li>
@@ -147,7 +148,7 @@
 									<img src="images/content/services/services-image--3.jpg" alt="weedings on porch">
 								</picture>
 								<div class="services-item__content">
-									<h3 class="services-item__title">Other events</h3>
+									<div class="services-item__title h3-like">Other events</div>
 									<ul class="services-list">
 										<li class="services-list__item"><a href="#" class="services-list__link">Bridal Party Dance</a></li>
 										<li class="services-list__item"><a href="#" class="services-list__link">Anniversary Dance</a></li>
@@ -255,7 +256,7 @@
 										<li class="coaches-list__item"><span class="coaches-list__key">Style</span><span
 												class="coaches-list__value">HipHop</span></li>
 									</ul>
-									<button class="button button--secondary coaches-item__button ">Let's start</button>
+									<button class="button button--secondary coaches-item__button" aria-label="Just let's">Let's start</button>
 								</div>
 							</div>
 
@@ -279,7 +280,7 @@
 										<li class="coaches-list__item"><span class="coaches-list__key">Style</span><span
 												class="coaches-list__value">HipHop</span></li>
 									</ul>
-									<button class="button button--secondary coaches-item__button ">Let's start</button>
+									<button class="button button--secondary coaches-item__button" aria-label="Just let's">Let's start</button>
 								</div>
 							</div>
 
@@ -303,20 +304,20 @@
 										<li class="coaches-list__item"><span class="coaches-list__key">Style</span><span
 												class="coaches-list__value">HipHop</span></li>
 									</ul>
-									<button class="button button--secondary coaches-item__button ">Let's start</button>
+									<button class="button button--secondary coaches-item__button" aria-label="Just let's">Let's start</button>
 								</div>
 
 							</div>
 						</div>
 
 						<div class="coaches-items__navigate navigate-slider">
-							<button class="coaches-items__slider-arrow slider-arrow slider-arrow--left">
+							<button class="coaches-items__slider-arrow slider-arrow slider-arrow--left" aria-label="Navigate coaches slider button left">
 								<svg class="svg-icon slider-arrow__icon">
 									<use xlink:href="images/icons/sprite.svg#arrow"></use>
 								</svg>
 							</button>
 							<div class="navigate-slider__pagination pagination pagination--fraction coaches-items__pagination"></div>
-							<button class="coaches-items__slider-arrow slider-arrow slider-arrow--right">
+							<button class="coaches-items__slider-arrow slider-arrow slider-arrow--right" aria-label="Navigate coaches slider button left">
 								<svg class="svg-icon slider-arrow__icon">
 									<use xlink:href="images/icons/sprite.svg#arrow"></use>
 								</svg>

@@ -98,6 +98,10 @@ a {
 }
 
 .overflow-hidden {
-	position: fixed;
-	width: 100%;
+  position: fixed;
+  width: 100%;
+}
+
+.icon::before {
+  font-display: swap;
 }
